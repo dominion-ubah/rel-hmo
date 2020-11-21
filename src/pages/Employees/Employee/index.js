@@ -125,7 +125,7 @@ constructor(props) {
                             </div>
                             <div className="d-flex mt-5 justify-content-end">
                                 {<button >Cancel</button>}
-                                <button className="ml-md-5" onClick={() => this.setState({disabled: true})}>Save</button>
+                                {!disabled && <button className="ml-md-5" onClick={() => this.setState({disabled: true})}>Save</button>}
                             </div>
                         </div>
                     </div>
