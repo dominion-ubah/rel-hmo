@@ -1,6 +1,6 @@
 import './App.css';
 import RouteComponent from './routes/RouteComponent/RouteComponent';
-
+import { withRouter } from "react-router-dom";
 function App() {
   return (
       <div className="App">
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);

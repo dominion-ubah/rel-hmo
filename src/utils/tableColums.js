@@ -36,5 +36,5 @@ export const columnsOfEmployees = [{
   },
   {
     dataField: 'employee_id',
-    formatter: (cell, row) => <EmployeeDetailsButton route={"/"+cell} />
+    formatter: (cell, row) => <EmployeeDetailsButton route={"/"+cell} state={row} />
   }];
